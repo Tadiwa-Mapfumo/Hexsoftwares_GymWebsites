@@ -26,6 +26,3 @@ Welcome to **FlexZone Gym**, a modern, responsive one-page fitness website built
 - Google Fonts: `Bitcount Prop`, `Oswald`
 
 ---
-
-## 🛠️ Folder Structure
-
