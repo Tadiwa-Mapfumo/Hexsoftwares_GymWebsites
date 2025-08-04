@@ -1,0 +1,277 @@
+/* ✅ Import fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Oswald:wght@200..700&display=swap');
+
+/* ✅ Reset browser default styles and apply box sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ✅ Apply global styles and Oswald font */
+body {
+  background: black;
+  color: white;
+  scroll-behavior: smooth;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* ✅ Hero section heading with Bitcount font and fade-in animation */
+.hero h2 {
+  font-family: 'Bitcount Prop Single', monospace; /* fallback font */
+  font-size: 3rem;
+  color: #FFB700;
+  animation: fadeIn 1.5s ease-in;
+}
+
+/* ✅ Hero paragraph styling */
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* ✅ Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 2px solid #FFB700;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* ✅ Navbar logo text */
+.navbar h1 {
+  color: #FFB700;
+}
+
+/* ✅ Navbar list items */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+/* ✅ Navbar links */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* ✅ Hover effect for navbar links */
+.navbar a:hover {
+  color: #FFB700;
+}
+
+/* ✅ Hero section background image and spacing */
+.hero {
+  background: url('images/hero.jpg') no-repeat center/cover;
+  text-align: center;
+  padding: 8rem 2rem;
+}
+
+/* ✅ Call-to-action button in hero */
+.hero button {
+  padding: 0.7rem 2rem;
+  background: #FFB700;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #FFB700;
+  transition: all 0.3s;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* ✅ Button hover state (same color for subtle glow effect) */
+.hero button:hover {
+  background: #FFB700;
+}
+
+/* ✅ Generic section padding and font */
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* ✅ Flexible grid layout for cards/plans */
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+/* ✅ Card and plan common styling */
+.card, .plan {
+  background: transparent;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 0 15px #FFB700;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* ✅ Hover effect for card and plan */
+.card:hover, .plan:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #FFB700;
+}
+
+/* ✅ Card image styles */
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ✅ Service list (text grid layout) */
+.services-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  padding: 0;
+  color: #FFB700; /* golden yellow */
+  text-align: center;
+}
+
+/* ✅ Plan feature list inside pricing box */
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+/* ✅ Highlighted plan styling (e.g. best value) */
+.plan.highlight {
+  background: #FFB700;
+  color: black;
+  font-weight: bold;
+}
+
+/* ✅ Contact section styling */
+.contact-section {
+  background: transparent;
+  padding: 3rem 2rem;
+  color: #FFB700;
+  text-align: center;
+  border-bottom: 2px solid #FFB700;
+  margin-top: 4rem;
+}
+
+/* ✅ Contact section title spacing */
+.contact-section h2 {
+  margin-bottom: 1rem;
+}
+
+/* ✅ Footer styles */
+footer {
+  background: black;
+  color: #FFB700;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* ✅ Fade-in animation keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ✅ Responsive Design Breakpoints */
+
+/* Medium screens (≤991px) */
+@media (max-width: 991px) {
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .grid {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .card, .plan {
+    width: 200px;
+  }
+}
+
+/* Small screens (≤767px) */
+@media (max-width: 767px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .navbar ul {
+    gap: 1rem;
+  }
+
+  .grid {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .card, .plan {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    padding: 6rem 1rem;
+  }
+}
+
+/* Extra small screens (≤479px) */
+@media (max-width: 479px) {
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* ✅ Social icon styles */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #f7c600;
+  padding: 10px;
+  margin: 5px;
+  font-size: 20px;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+/* ✅ Hover effect for social icons */
+.social-icons a:hover {
+  transform: scale(1.1);
+  background-color: #f7c600;
+  color: black;
+}

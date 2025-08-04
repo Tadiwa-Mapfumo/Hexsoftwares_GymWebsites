@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlexZone Gym</title>
+
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/2e703a41f9.js" crossorigin="anonymous"></script>
+
+  <!-- Link to External CSS File -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header Section with Navigation and Hero -->
+  <header>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <h1>FlexZone Gym</h1>
+      <ul>
+        <!-- Navigation links to sections on the same page -->
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#membership">Membership</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Banner with Call to Action -->
+    <div class="hero">
+      <h2>Unleash Your Inner Beast</h2>
+      <p>Join the strongest fitness community in town</p>
+      <!-- Button scrolls down to the membership section -->
+      <button onclick="scrollToSection('membership')">
+        <i class="fas fa-arrow-down"></i> Join Now
+      </button>
+    </div>
+  </header>
+
+  <!-- Facilities Section -->
+  <section id="facilities">
+    <h2>Our Facilities</h2>
+    <div class="grid">
+      <!-- Gym facility cards with images and labels -->
+      <div class="card">
+        <img src="images/gym1.jpg" alt="Weight Training" />
+        <p>Weight Training</p>
+      </div>
+      <div class="card">
+        <img src="images/gym2.jpg" alt="Cardio Machines" />
+        <p>Cardio Machines</p>
+      </div>
+      <div class="card">
+        <img src="images/gym3.jpg" alt="CrossFit Zone" />
+        <p>CrossFit Zone</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-grid">
+    <h2>Services</h2>
+    <!-- List of gym services -->
+    <ul class="services-list">
+      <li class="service">Personal Training</li>
+      <li class="service">Nutrition Plans</li>
+      <li class="service">Group Workouts</li>
+      <li class="service">24/7 Access</li>
+      <li class="service">Yoga Classes</li>
+      <li class="service">Sauna & Spa</li>
+      <li class="service">Bootcamp</li>
+      <li class="service">Weight Loss Coaching</li>
+      <li class="service">Kids Programs</li>
+    </ul>
+  </section>
+
+  <!-- Membership Plans Section -->
+  <section id="membership">
+    <h2>Membership Plans</h2>
+    <div class="grid">
+      <!-- Basic Plan -->
+      <div class="plan">
+        <h3>Basic</h3>
+        <p>R199/month</p>
+        <ul>
+          <li>Gym Access</li>
+          <li>Locker</li>
+        </ul>
+      </div>
+      <!-- Highlighted Premium Plan -->
+      <div class="plan highlight">
+        <h3>Premium</h3>
+        <p>R399/month</p>
+        <ul>
+          <li>All Basic Features</li>
+          <li>Trainer Access</li>
+          <li>Free Merchandise</li>
+        </ul>
+      </div>
+      <!-- Elite Plan -->
+      <div class="plan">
+        <h3>Elite</h3>
+        <p>R599/month</p>
+        <ul>
+          <li>All Premium Features</li>
+          <li>Nutrition Guide</li>
+          <li>Custom Program</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <!-- Contact details -->
+    <p><i class="fas fa-envelope"></i> Email: info@flexzone.co.za</p>
+    <p><i class="fas fa-phone"></i> Phone: 012 345 6789</p>
+    
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 FlexZone Gym</p>
+  </footer>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
